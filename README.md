@@ -1,4 +1,4 @@
-# INF6150
+# PizzaMania
 
 # Structure
 Le document possède
