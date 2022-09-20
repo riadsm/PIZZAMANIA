@@ -1,0 +1,357 @@
+/* style DESKTOP */
+/* MENU */
+
+* {
+    font-family: 'Oswald', sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background-color: white;   
+}
+
+input [type=checkbox] {
+    background-color: red !important;
+}
+.dropbtn {          
+    color: white;
+    padding: 16px;    
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #be1d2c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;          
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;    
+    font-size: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #84131e;
+    color: white;
+}
+
+#dropdown1:hover #dropdown-content1, #dropdown2:hover #dropdown-content2, #dropdown3:hover #dropdown-content3 {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #84131e;
+}
+
+.fa fa-list-ol {
+    visibility: hidden;
+}
+
+#img-logo {width: 15rem; margin-bottom: 5%;padding: 2px;}
+
+#container-menu {
+    width: 100%;
+    height: 1vw;            
+    position: fixed;  
+    top: 0; 
+    z-index: 2000;
+}
+
+#div-menu {                    
+    text-align: center; 
+    background-color: #be1d2c;
+}
+    
+.topnav {display: none;}
+
+#menu-main {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.menu-img-pizza { width: 10rem; }
+.menu-img-perso { width: 15rem; }
+.menu-img-cote { width: 7rem; }
+
+.menu-titre {
+    background-color: #3cb549; 
+    padding: 10px; 
+    color: white;
+    margin: auto;
+}
+
+.menu-titre-page {
+    background-color: #be1d2c;
+    padding: 15px;
+    color: white;
+}
+
+.menu-case {
+    padding: 2px;
+}
+
+.menu-border {
+    padding: 5px;    
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu-perso-zoom, .menu-border {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;    
+}
+
+.menu-perso-zoom:hover, .menu-border:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.menu-border:hover {
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px #555;
+}
+
+.menu-case .btn{
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    border-radius: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+.menu-case .btn:hover, .menu-case .btn:focus{
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background: #000;
+    border-color: #000;
+    box-shadow: none;
+}
+.menu-case .btn i{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#btn-menu {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.content {
+    flex: 1;
+}
+
+/* FOOTER */
+.footer {   
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3cb549;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.spacer { height: 100px; }
+.spacer-2 { height: 30px; }
+
+#cpt-items {
+    color: white;    
+    font-size: 2rem;    
+    margin-left: -12%;
+    top: auto;
+    position: absolute;
+}
+
+@media screen and (max-width: 1357px) {
+    /* style DESKTOP moyen */
+    #img-logo {padding: 0;}
+
+    #container-menu {height: 50px;}
+
+    #menu-main { margin-left: 15%; margin-right: 15%;}
+
+    .spacer { height: 80px; }
+    .spacer-2 { height: 20px; }
+
+    .menu-img-pizza { width: 8rem;}    
+    .menu-img-perso { width: 12rem; }
+    .menu-img-cote { width: 6rem; }
+}
+
+@media screen and (max-width: 991px) {
+/* style TABLETTE large */
+    #img-logo {width: 10rem; padding: 0;}
+
+    #container-menu {height: 50px;}        
+    
+    #menu-main { margin-left: 10%; margin-right: 10%;}
+    .spacer { height: 60px; }
+    .spacer-2 { height: 15px; }
+    
+    .menu-img-pizza { width: 7rem; }    
+    .menu-img-perso { width: 10rem; }
+    .menu-img-cote { width: 5rem; }
+}
+
+@media screen and (max-width: 767px) {
+
+    #img-logo {width: 8rem; }
+
+    #div-menu {display: none;}
+    
+    /* Style the navigation menu */
+    .topnav {
+    display: block;
+    overflow: hidden;
+    background-color: #3cb549;
+    position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+    display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {              
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+    background-color: rgb(34, 95, 44)549;
+    color: black;
+    }
+    
+    .topnav-sub {
+        display: none;                
+    }
+    
+    .topnav-sub a {                
+        background-color: #aaa;
+        color: black;
+        font-family: 'nexa', sans-serif;
+        font-size: 16px;
+        padding-left: 20px;        
+    }
+
+    /* Style the active link (or home/logo) */
+    .active-nav {
+    background-color: #be1d2c;
+    color: white;
+    }
+            
+    #img-logo-mobile {width: 8vw; padding: 0;}
+    
+    #menu-main { margin-left: 5%; margin-right: 5%;}
+
+    .spacer { height: 40px; }
+    .spacer-2 { height: 10px; }
+
+    .menu-img-pizza { width: 6rem; }    
+    .menu-img-perso { width: 9rem; }
+    .menu-img-cote { width: 4rem; }
+
+}
+
+@media screen and (max-width: 479px) {
+/* style MOBILE*/
+    #div-menu {display: none;}
+    
+    /* Style the navigation menu */
+    .div-menu-mobile {
+        display: block;
+        overflow: hidden;                
+        position: relative;
+        
+    }
+            
+    #img-logo-mobile {width: 8vw; padding: 0;}
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .div-menu-mobile #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .div-menu-mobile a {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .div-menu-mobile a.icon {
+        background: #be1d2c;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .div-menu-mobile a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active-nav {              
+    color: white;
+    }
+
+    #menu-main { margin-left: 2%; margin-right: 2%;}
+
+    .spacer { height: 20px; }
+    .spacer-2 { height: 5px; }
+
+    .menu-img-pizza { width: 5rem; }    
+    .menu-img-perso { width: 8rem; }
+    .menu-img-cote { width: 3.5rem; }
+    
+}
